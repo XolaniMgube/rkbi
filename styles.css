@@ -502,3 +502,36 @@ section {
     padding: 25px;
   }
 }
+
+
+/* =========================
+   GALLERY MODAL
+========================= */
+
+.gallery-modal {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.gallery-modal .modal-title {
+  font-weight: 600;
+  color: var(--rkbi-blue);
+}
+
+.gallery-modal img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Arrow contrast */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .gallery-modal img {
+    height: 50vh;
+  }
+}
