@@ -11,6 +11,11 @@ body {
   color: var(--rkbi-dark);
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* ---------- NAVBAR ON HERO ---------- */
 .navbar-hero {
   background: transparent;
@@ -39,11 +44,23 @@ body {
 .navbar.scrolled {
   background: #ffffff;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  /* padding-bottom: 0; */
 }
 
 .navbar.scrolled .navbar-brand,
 .navbar.scrolled .nav-link {
   color: var(--rkbi-blue) !important;
+}
+
+.navbar-brand .navbar-logo {
+  height: 80px;   /* adjust as needed */
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+/* When scrolled – smaller logo */
+.navbar.scrolled .navbar-logo {
+  height: 50px;
 }
 
 /* ---------- HERO ---------- */
